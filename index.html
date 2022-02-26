@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ordering</title>
+    <link rel="stylesheet" href="css/ordering-system-style.css"/>
+
+    <script src="js/ordering.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>PIZZAAABONANZA</h1>
+      <div class="menus">
+	<div class="menus-detail-items">
+	  <p><strong>Food Item</strong></p>
+	  <p>Garlic Pizza</p>
+	  <p>Spicy Garlic Pizza</p>
+	  <p>Beef + Bacon Pizza</p>
+	  <p>Peppercorn Pizza</p>
+	  <p>Water Bottle</p>
+	</div>
+	<div class="menus-detail-prices">
+	  <p><strong>Price [Php]</strong></p>
+	  <p>- 120.00</p>
+	  <p>- 200.00</p>
+	  <p>- 180.00</p>
+	  <p>- 100.00</p>
+	  <p>- 70.00</p>
+	</div>
+      </div>
+
+      <h1 class="form-heading">PIZZAAABONANZA ORDERING FORM</h1>
+
+      <div class="orders">
+	<div class="order-details">
+	  <p><strong>Food Item</strong></p>
+	  <label>
+	    Item 1.
+	    <select id="item1">
+	      <option value="Garlic Pizza">Garlic Pizza</option>
+	      <option value="Spicy Garlic Pizza">Spicy Garlic Pizza</option>
+	      <option value="Beef + Bacon Pizza">Beef + Bacon Pizza</option>
+	      <option value="Peppercorn Pizza">Peppercorn Pizza</option>
+	      <option value="Water Bottle">Water Bottle</option>
+	    </select>
+	  </label>
+
+	  <br>
+	  
+	  <label>
+            Item 2.
+            <select id="item2">
+              <option value="Garlic Pizza">Garlic Pizza</option>
+              <option value="Spicy Garlic Pizza">Spicy Garlic Pizza</option>
+              <option value="Beef + Bacon Pizza">Beef + Bacon Pizza</option>
+              <option value="Peppercorn Pizza">Peppercorn Pizza</option>
+              <option value="Water Bottle">Water Bottle</option>
+            </select>
+	  </label>
+
+	  <br>
+
+	  <label>
+            Item 3.
+            <select id="item3">
+              <option value="Garlic Pizza">Garlic Pizza</option>
+              <option value="Spicy Garlic Pizza">Spicy Garlic Pizza</option>
+              <option value="Beef + Bacon Pizza">Beef + Bacon Pizza</option>
+              <option value="Peppercorn Pizza">Peppercorn Pizza</option>
+              <option value="Water Bottle">Water Bottle</option>
+            </select>
+          </label>
+
+	  <br>
+
+	  <label>
+            Item 4.
+            <select id="item4">
+              <option value="Garlic Pizza">Garlic Pizza</option>
+              <option value="Spicy Garlic Pizza">Spicy Garlic Pizza</option>
+              <option value="Beef + Bacon Pizza">Beef + Bacon Pizza</option>
+              <option value="Peppercorn Pizza">Peppercorn Pizza</option>
+              <option value="Water Bottle">Water Bottle</option>
+            </select>
+          </label>
+	</div>
+
+	<div class="order-details">
+	  <p><strong>Quantity</strong></p>
+	  <input id="q1" type="number"/><br>
+	  <input id="q2" type="number"/><br>
+	  <input id="q3" type="number"/><br>
+	  <input id="q4" type="number"/><br><br>
+	  <a href="/billing">
+	    <button onclick="calculateBill();">Calculate Bill</button>
+	  </a>
+	</div>
+
+	<div class="order-details">
+          <p><strong>Price</strong></p>
+          <input id="p1" type="number"/><br>
+          <input id="p2" type="number"/><br>
+          <input id="p3" type="number"/><br>
+          <input id="p4" type="number"/><br><br>
+          <button onclick="clearOrders();">Clear</button>
+        </div>
+      </div>
+      <br>
+    </div>
+  </body>
+</html>
